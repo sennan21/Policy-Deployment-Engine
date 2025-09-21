@@ -1,4 +1,4 @@
-resource "google_looker_instance" "bad" {
+﻿resource "google_looker_instance" "nc" {
   name    = "bad"
   project = var.project
   # encryption_config intentionally omitted to trigger failure

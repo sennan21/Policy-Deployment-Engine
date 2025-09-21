@@ -1,4 +1,4 @@
-resource "google_looker_instance" "bad" {
+﻿resource "google_looker_instance" "nc" {
   name    = "bad"
   project = var.project
   # consumer_network intentionally omitted to trigger failure

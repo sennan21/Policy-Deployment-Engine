@@ -1,4 +1,4 @@
-﻿resource "google_looker_instance" "bad" {
+﻿resource "google_looker_instance" "nc" {
   name             = "bad"
   project          = var.project
   platform_edition = "LOOKER_CORE_TRIAL"  # Trial edition to trigger failure
