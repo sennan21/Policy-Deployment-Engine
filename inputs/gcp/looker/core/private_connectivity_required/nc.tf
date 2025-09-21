@@ -1,5 +1,5 @@
 resource "google_looker_instance" "bad" {
-  name = "nc"
+  name = "looker-instance-non-compliant"
   project           = var.project
   public_ip_enabled = true
   # private_ip_enabled = false (default/omitted)
@@ -9,5 +9,6 @@ resource "google_looker_instance" "bad" {
     client_secret = "test-client-secret"
   }
 }
+
 
 

@@ -1,5 +1,5 @@
 resource "google_looker_instance" "ok" {
-  name = "c"
+  name = "looker-instance-compliant"
   project        = var.project
   reserved_range = "projects/test-project-123/global/addresses/test-reserved-range"
   oauth_config {
@@ -7,4 +7,5 @@ resource "google_looker_instance" "ok" {
     client_secret = "test-client-secret"
   }
 }
+
 

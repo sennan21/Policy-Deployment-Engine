@@ -1,5 +1,5 @@
 resource "google_looker_instance" "bad" {
-  name = "nc"
+  name = "looker-instance-non-compliant"
   project = var.project
   # consumer_network intentionally omitted to trigger failure
   oauth_config {
@@ -7,4 +7,5 @@ resource "google_looker_instance" "bad" {
     client_secret = "test-client-secret"
   }
 }
+
 

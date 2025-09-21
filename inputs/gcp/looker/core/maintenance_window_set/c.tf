@@ -1,5 +1,5 @@
 resource "google_looker_instance" "ok" {
-  name = "c"
+  name = "looker-instance-compliant"
   project = var.project
   maintenance_window {
     day_of_week = "SUNDAY"
@@ -15,4 +15,5 @@ resource "google_looker_instance" "ok" {
     client_secret = "test-client-secret"
   }
 }
+
 

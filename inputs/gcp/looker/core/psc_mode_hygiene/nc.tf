@@ -1,5 +1,5 @@
 resource "google_looker_instance" "bad" {
-  name = "nc"
+  name = "looker-instance-non-compliant"
   project            = var.project
   psc_enabled        = true
   public_ip_enabled  = true      # ← triggers Situation A
@@ -9,5 +9,6 @@ resource "google_looker_instance" "bad" {
     client_secret = "test-client-secret"
   }
 }
+
 
 
